@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./assets/css/style.css">
-  <title>Document</title>
+  <title>Itachi Uchiha | Akatsuki</title>
 </head>
 
 <body>
@@ -43,7 +43,7 @@
         </div>
         <div class="susanoo">
           <img src="./assets/img/susanoo.png" alt="">
-          <a href="#"><i data-feather="play" class="play"></i>Play</a>
+          <a href="#" class="modalOpen"><i data-feather="play" class="play"></i>Play</a>
           <div class="textCard2">
             <div class="stars">
               <i data-feather="star" class="star"></i>
@@ -68,7 +68,7 @@
                 <i data-feather="star" class="star"></i>
                 <h2>Amaterasu</h2>
               </div>
-              <a href="#"><i data-feather="play"></i>Play</a>
+              <a href="#" class="modalOpen"><i data-feather="play" class="play"></i>Play</a>
             </div>
           </div>
           <div class="tsukiyomi">
@@ -81,16 +81,23 @@
                 <i data-feather="star" class="star"></i>
                 <h2>Tsukiyomi</h2>
               </div>
-              <a href="#"><i data-feather="play"></i>Play</a>
+              <a href="#" class="modalOpen"><i data-feather="play" class="play"></i>Play</a>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <div class="modal containerModal">
+      <i data-feather="x" class="close" onclick="closeModal()"></i>
+      <iframe width="100%" height="100%" src="https://www.youtube.com/embed/_YYjcTlz_6o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
   </section>
 
+  <audio src="./assets/img/akatsuki theme_160k.mp3" volume="10" loop="true" autoplay="true"></audio>
+  
 
   <script src="https://unpkg.com/feather-icons"></script>
+  <script src="./assets/js/main.js"></script>
   <script>
     feather.replace()
 

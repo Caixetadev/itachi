@@ -286,4 +286,25 @@ section .containerSkill .card2 .containerAmaterasu .tsukiyomi .filterAmaterasu a
   background: #fe264e98;
 }
 
+.modal {
+  position: relative;
+  display: none;
+  top: -500px;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  z-index: 20000;
+  background-color: rgba(26, 25, 25, 0.911);
+  width: 700px;
+  height: 700px;
+  padding: 20px 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.modal .close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
 /*# sourceMappingURL=style.css.map */
