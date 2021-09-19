@@ -14,3 +14,10 @@ button.forEach((b) => {
   })
 
 })
+
+// const btn = document.querySelector('button')
+// const audio = document.querySelector('audio')
+
+// btn.addEventListener('click', () => {
+//   audio.pause
+// })

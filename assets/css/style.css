@@ -24,7 +24,7 @@ a {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: 100%;
+  width: 100vw;
   height: 60vh;
   background-attachment: fixed;
 }
@@ -104,6 +104,10 @@ a {
   display: flex;
   align-items: center;
   cursor: pointer;
+}
+.banner .filter .containerHeader .perfil .mobile {
+  display: none;
+  stroke: #FFF;
 }
 .banner .filter .containerHeader .perfil h3 {
   color: #d1d1d1;
@@ -429,6 +433,76 @@ section .containerSkill .borderRight {
   top: 20px;
   right: 20px;
   cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  header .banner {
+    background-attachment: inherit;
+  }
+  header .banner .filter .containerHeader {
+    width: 80%;
+  }
+  header .banner .filter .containerHeader .perfil img, header .banner .filter .containerHeader .perfil h3, header .banner .filter .containerHeader .perfil .cheveron {
+    display: none;
+  }
+  header .banner .filter .containerHeader .perfil .mobile {
+    display: block;
+    height: 35px;
+    border-radius: 10px;
+    width: 33px;
+    overflow-x: hidden;
+  }
+  header .banner .filter .containerHeader .cardBell, header .banner .filter .containerHeader .cardMessage {
+    margin-right: 35px;
+  }
+
+  section .containerSkill {
+    width: 80%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  section .containerSkill .card1 {
+    top: -100px;
+  }
+  section .containerSkill .card2 {
+    top: -71px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    margin: 0 auto;
+    justify-content: center;
+    left: 0;
+  }
+  section .containerSkill .card2 .susanoo a {
+    left: 23px;
+  }
+  section .containerSkill .card2 .susanoo .textCard2 {
+    top: 137px;
+    right: -2px;
+  }
+  section .containerSkill .card2 .susanoo img {
+    width: 84px;
+    height: 160px;
+    right: -187px;
+    transform: scaleX(1);
+    top: 124px;
+  }
+  section .containerSkill .card2 .containerAmaterasu .amaterasu {
+    margin-right: 10px;
+  }
+  section .containerSkill .borderRight, section .containerSkill .borderleft {
+    display: none;
+  }
+
+  .filterAmaterasu .textCard {
+    left: 10px !important;
+  }
+  .filterAmaterasu .textCard h2 {
+    font-size: 20px;
+  }
+  .filterAmaterasu .textCard .star {
+    width: 15px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

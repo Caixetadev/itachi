@@ -21,7 +21,7 @@ a
   background-repeat: no-repeat
   background-position: center
   background-size: cover
-  width: 100%
+  width: 100vw
   height: 60vh
   background-attachment: fixed
 
@@ -103,6 +103,10 @@ a
         display: flex
         align-items: center
         cursor: pointer
+
+        .mobile
+          display: none
+          stroke: #FFF
 
         h3
           color: #d1d1d1
@@ -422,4 +426,74 @@ section
     right: 20px
     cursor: pointer
 
-@media (min-width: 600px)
+@media (max-width: 600px)
+  header
+    .banner
+      background-attachment: inherit
+
+      .filter
+        .containerHeader
+          width: 80%
+          .perfil
+            img,h3,.cheveron
+              display: none
+
+            .mobile
+              display: block
+              height: 35px
+              border-radius: 10px
+              width: 33px
+              overflow-x: hidden
+
+          .cardBell, .cardMessage
+            margin-right: 35px
+
+  section
+    .containerSkill
+      width: 80%
+      justify-content: center
+      flex-wrap: wrap
+
+      .card1
+        top: -100px
+
+      .card2
+        top: -71px
+        display: flex
+        flex-wrap: wrap
+        width: 300px
+        margin: 0 auto
+        justify-content: center
+        left: 0
+
+        .containerCard
+        .susanoo
+          a
+            left: 23px
+          .textCard2
+            top: 137px
+            right: -2px
+          img
+            width: 84px
+            height: 160px
+            right: -187px
+            transform: scaleX(1)
+            top: 124px
+
+        .containerAmaterasu
+          .amaterasu
+            margin-right: 10px
+
+      .borderRight, .borderleft
+        display: none
+
+  .filterAmaterasu
+    .textCard
+      left: 10px !important
+
+      h2
+        font-size: 20px
+
+      .star
+        width: 15px
+
