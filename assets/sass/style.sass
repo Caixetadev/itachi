@@ -426,6 +426,52 @@ section
     right: 20px
     cursor: pointer
 
+.seila
+  width: 1160px
+  display: flex
+  margin: 0 auto
+  position: relative
+  justify-content: flex-start
+
+  .containerGroup
+    position: absolute
+    top: -480px
+    background: rgba(255, 255, 255, 0.019)
+    backdrop-filter: blur(25px)
+    width: 14.375rem
+    height: 25rem
+    padding: 20px
+    border-radius: 20px
+
+    img
+      width: 40px
+      border-radius: 8px
+
+    h1
+      color: #d1d1d1
+      font-weight: 500
+      margin-bottom: 20px
+
+    .akatsuki, .uchiha
+      display: flex
+      align-items: center
+      padding: 8px 6px
+      margin: 0 auto 10px auto
+      width: 11rem
+      border-radius: 15px
+      background: rgba(255, 255, 255, 0.021)
+      backdrop-filter: blur(25px)
+
+      .textGroup
+        margin-left: 10px
+        h3
+          color: #d1d1d1
+          font-size: 14px
+
+        p
+          font-size: 11px
+          color: #f5f5f569
+
 @media (max-width: 600px)
   header
     .banner
@@ -497,3 +543,11 @@ section
       .star
         width: 15px
 
+  .seila
+    width: 80%
+    justify-content: center
+
+    .containerGroup
+      margin-top: 460px
+      overflow-x: hidden
+      position: inherit

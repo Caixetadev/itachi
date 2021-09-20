@@ -435,6 +435,54 @@ section .containerSkill .borderRight {
   cursor: pointer;
 }
 
+.seila {
+  width: 1160px;
+  display: flex;
+  margin: 0 auto;
+  position: relative;
+  justify-content: flex-start;
+}
+.seila .containerGroup {
+  position: absolute;
+  top: -480px;
+  background: rgba(255, 255, 255, 0.019);
+  backdrop-filter: blur(25px);
+  width: 14.375rem;
+  height: 25rem;
+  padding: 20px;
+  border-radius: 20px;
+}
+.seila .containerGroup img {
+  width: 40px;
+  border-radius: 8px;
+}
+.seila .containerGroup h1 {
+  color: #d1d1d1;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.seila .containerGroup .akatsuki, .seila .containerGroup .uchiha {
+  display: flex;
+  align-items: center;
+  padding: 8px 6px;
+  margin: 0 auto 10px auto;
+  width: 11rem;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.021);
+  backdrop-filter: blur(25px);
+}
+.seila .containerGroup .akatsuki .textGroup, .seila .containerGroup .uchiha .textGroup {
+  margin-left: 10px;
+}
+.seila .containerGroup .akatsuki .textGroup h3, .seila .containerGroup .uchiha .textGroup h3 {
+  color: #d1d1d1;
+  font-size: 14px;
+}
+.seila .containerGroup .akatsuki .textGroup p, .seila .containerGroup .uchiha .textGroup p {
+  font-size: 11px;
+  color: #f5f5f569;
+}
+
 @media (max-width: 600px) {
   header .banner {
     background-attachment: inherit;
@@ -502,6 +550,16 @@ section .containerSkill .borderRight {
   }
   .filterAmaterasu .textCard .star {
     width: 15px;
+  }
+
+  .seila {
+    width: 80%;
+    justify-content: center;
+  }
+  .seila .containerGroup {
+    margin-top: 460px;
+    overflow-x: hidden;
+    position: inherit;
   }
 }
 
