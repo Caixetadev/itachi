@@ -69,7 +69,7 @@
         </div>
         <div class="susanoo">
           <img src="./assets/img/susanoo.png" alt="">
-          <a href="#" class="modalOpen"><i data-feather="play" class="play"></i>Play</a>
+          <a href="#" class="modalOpen" data-id="0"><i data-feather="play" class="play"></i>Play</a>
           <div class="textCard2">
             <div class="stars">
               <i data-feather="star" class="star"></i>
@@ -94,7 +94,7 @@
                 <i data-feather="star" class="star"></i>
                 <h2>Amaterasu</h2>
               </div>
-              <a href="#" class="modalOpen"><i data-feather="play" class="play"></i>Play</a>
+              <a href="#" class="modalOpen" data-id="1"><i data-feather="play" class="play"></i>Play</a>
             </div>
           </div>
           <div class="tsukiyomi">
@@ -107,7 +107,7 @@
                 <i data-feather="star" class="star"></i>
                 <h2>Tsukiyomi</h2>
               </div>
-              <a href="#" class="modalOpen"><i data-feather="play" class="play"></i>Play</a>
+              <a href="#" class="modalOpen" data-id="2"><i data-feather="play" class="play"></i>Play</a>
             </div>
           </div>
         </div>
@@ -138,18 +138,10 @@
     </div>
   </section>
 
-  <audio autoplay="true" loop="true">
-    <source src="./assets/audio/itachiremix.mp3" type="audio/mpeg">
-  </audio>
-
-  <div class="modal containerModal">
-    <i data-feather="x" class="close" onclick="closeModal()"></i>
-    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/_YYjcTlz_6o" title="YouTube video player"
-      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen></iframe>
-  </div>
+  <div class="modal containerModal"></div>
 
   <script src="https://unpkg.com/feather-icons"></script>
+  <script src="./assets/js/lista.js"></script>
   <script src="./assets/js/main.js"></script>
   <script>
     feather.replace()
