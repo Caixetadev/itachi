@@ -1,8 +1,11 @@
 const modal = document.querySelector('.modal')
+const seila = document.querySelector('.blur')
 
 
 function closeModal() {
+  seila.style.display = 'none'
   modal.style.display = 'none'
+  
 }
 
 const button = document.querySelectorAll('.modalOpen')
@@ -12,6 +15,7 @@ button.forEach((b) => {
   const { name } = skills[index]
 
   b.addEventListener('click', (event) => {
+    seila.style.display = 'flex'
     event.preventDefault()
     modal.style.display = 'flex'
     modal.innerHTML = `

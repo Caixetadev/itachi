@@ -20,13 +20,12 @@ a {
 }
 
 .banner {
-  background-image: url("../img/banner.jpg");
+  background-image: url("../img/banner-min.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   width: 100vw;
   height: 60vh;
-  background-attachment: fixed;
 }
 .banner .filter {
   background: rgba(0, 0, 0, 0.7);
@@ -325,7 +324,7 @@ section .containerSkill .card2 .containerAmaterasu {
   justify-content: space-between;
 }
 section .containerSkill .card2 .containerAmaterasu .amaterasu {
-  background-image: url("../img/amaterasu.png");
+  background-image: url("../img/amaterasu-min.png");
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
@@ -415,20 +414,32 @@ section .containerSkill .borderRight {
 }
 
 .modal {
-  position: relative;
-  display: none;
-  top: -500px;
-  left: 55%;
-  transform: translate(-50%, -50%);
-  z-index: 20000;
-  background-color: rgba(26, 25, 25, 0.911);
-  width: 700px;
-  height: 700px;
-  padding: 20px 20px;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  left: 50%;
+  background: #303030;
+  color: #fff;
+  box-shadow: 2px 1px 3px rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  top: 15%;
+  transform: translate(-50%);
+  max-height: 80%;
+  z-index: 100;
 }
-.modal .close {
+
+.blur {
+  position: fixed;
+  width: 100%;
+  display: none;
+  height: 190%;
+  overflow: hidden;
+  left: 0%;
+  background: rgba(0, 0, 0, 0.7);
+  box-shadow: 2px 1px 3px rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  top: 0%;
+  z-index: 100000;
+}
+.blur .close {
   position: absolute;
   top: 20px;
   right: 20px;
