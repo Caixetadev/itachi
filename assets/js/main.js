@@ -27,6 +27,8 @@ button.forEach((b) => {
 
 })
 
+feather.replace()
+
 
 /* const audio = document.querySelector('audio')
 window.onload = function music() {
